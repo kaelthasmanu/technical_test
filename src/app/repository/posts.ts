@@ -9,8 +9,8 @@ export async function fetchAllPosts(): Promise<Post[]> {
     return response.data;
 }
 
-export async function fetchPost(): Promise<Post> {
-    const response = await query.get('/posts/1');
+export async function fetchPost(id: number): Promise<Post> {
+    const response = await query.get(`/posts/${id}`);
     if (response.status < 200 || response.status >= 300) {
         throw new Error('Failed to fetch post');
     }
