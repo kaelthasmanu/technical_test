@@ -36,8 +36,8 @@ const syncWithDatabaseMiddleware: Middleware =
       DeletePostRequest(postIdToRemove)
         .then(() => {
           addToast({
-            title: "Toast title",
-            description: "Toast displayed successfully",
+            title: "Item Delete",
+            description: "Item Delete successfully",
             color: "success",
           });
           store.dispatch(
@@ -51,8 +51,8 @@ const syncWithDatabaseMiddleware: Middleware =
           if (!postToRemove) return;
           store.dispatch(rollbackPost(postToRemove));
           addToast({
-            title: "Toast title",
-            description: "Toast displayed successfully",
+            title: "Error",
+            description: "Item Delete failed",
             color: "danger",
           });
           store.dispatch(
@@ -77,8 +77,8 @@ const syncWithDatabaseMiddleware: Middleware =
         .then((res) => {
           console.log(res)
           addToast({
-            title: "Toast title",
-            description: "Toast displayed successfully",
+            title: "Item Add",
+            description: "Item Add successfully",
             color: "success",
           });
           store.dispatch(
@@ -92,8 +92,8 @@ const syncWithDatabaseMiddleware: Middleware =
           if (!postToRollback) return;
           store.dispatch(rollbackPostAdd(postToRollback.id));
           addToast({
-            title: "Toast title",
-            description: "Toast displayed successfully",
+            title: "Item Add",
+            description: "Item Add failed",
             color: "danger",
           });
           store.dispatch(
@@ -115,8 +115,8 @@ const syncWithDatabaseMiddleware: Middleware =
       UpdatePostRequest(postToUpdate.id, postToUpdate)
         .then(() => {
           addToast({
-            title: "Toast title",
-            description: "Toast displayed successfully",
+            title: "Item Update",
+            description: "Item Update successfully",
             color: "success",
           });
           store.dispatch(
@@ -130,8 +130,8 @@ const syncWithDatabaseMiddleware: Middleware =
           if (!postToRollback) return;
           store.dispatch(rollbackPostUpdate(postToRollback));
           addToast({
-            title: "Toast title",
-            description: "Toast displayed successfully",
+            title: "Item Update",
+            description: "Item Update failed",
             color: "danger",
           });
           store.dispatch(
