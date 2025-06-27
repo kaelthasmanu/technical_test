@@ -240,7 +240,6 @@ interface Notification {
 ## 📱 Características de UI/UX
 
 - **Diseño Responsivo**: Funciona en dispositivos móviles y desktop
-- **Tema Oscuro/Claro**: Soporte completo para ambos temas
 - **Animaciones**: Transiciones suaves con Framer Motion
 - **Accesibilidad**: Componentes accesibles con HeroUI
 - **Feedback Visual**: Notificaciones y estados de carga
@@ -282,18 +281,7 @@ La aplicación se integra con [JSONPlaceholder](https://jsonplaceholder.typicode
 - [x] Interfaz responsiva
 - [x] Gestión de estado con Redux
 - [x] Integración con API
-- [x] Soporte de temas
 - [x] TypeScript completo
-
-### Posibles Mejoras 🔄
-- [ ] Autenticación de usuarios
-- [ ] Filtros y búsqueda de posts
-- [ ] Categorías de posts
-- [ ] Comentarios en posts
-- [ ] Upload de imágenes
-- [ ] Modo offline con cache
-- [ ] Tests unitarios y de integración
-- [ ] SEO optimization
 
 ## 🤝 Contribución
 
